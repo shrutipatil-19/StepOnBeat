@@ -1,12 +1,22 @@
 import React from 'react';
-import Layout from './components/Layout';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Layout>
-      <h2 className="text-2xl font-semibold mb-4">Welcome to the Main Content</h2>
-      <p>This is the body section of the application.</p>
-    </Layout>
+    <Router>
+      <Navbar />
+      <div className="container mt-5">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
