@@ -2,7 +2,7 @@ import React from 'react';
 import EventCard from '../components/EventCard'; // adjust the path if needed
 import AboutFestava from '../components/AboutFestava';
 import MeetArtist from '../components/MeetArtist';
-
+import Form from '../components/Form';
 function Home() {
   const events = [
     {
@@ -80,7 +80,7 @@ function Home() {
         </div>
       </section>
       <AboutFestava />
-<MeetArtist />
+      <MeetArtist />
       <section className="schedule-section section-padding" id="section_4">
         <div className="container ">
           <div className="row justify-content-center">
@@ -90,22 +90,22 @@ function Home() {
             </div>
 
             <div className="row">
-            {events.map((event, index) => (
-              <div className="col-md-4 mb-4" key={index}>
-                <EventCard
-                  title={event.title}
-                  date={event.date}
-                  description={event.description}
-                  image={event.image}
-                />
-              </div>
-            ))}
+              {events.map((event, index) => (
+                <div className="col-md-4 mb-4" key={index}>
+                  <EventCard
+                    title={event.title}
+                    date={event.date}
+                    description={event.description}
+                    image={event.image}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-    </section >
-
+      </section >
+      <Form />
     </>
   );
 

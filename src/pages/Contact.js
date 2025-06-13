@@ -1,7 +1,10 @@
 import React from 'react';
+import Form from '../components/Form';
 
 function Contact() {
-  return <h2>📞 Contact Page</h2>;
-}
+  return (
+    <Form />
+  );
+};
 
 export default Contact;
