@@ -1,10 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 function Navbar() {
+    const location = useLocation();
+    const isHomePage = location.pathname === '/';
     return (
         <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: '83px' }}>
-            <nav className="navbar navbar-expand-lg">
+            <nav className={`navbar navbar-expand-lg ${!isHomePage ? 'bg-black' : ''}`}>
                 <div className="container">
                     <a className="navbar-brand" href="/">
                         Festava Live
