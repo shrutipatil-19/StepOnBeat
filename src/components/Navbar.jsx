@@ -35,16 +35,17 @@ function Navbar() {
                                 <NavLink className="nav-link click-scroll" to="/artist" end>Artists</NavLink>
                             </li>
 
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a className="nav-link click-scroll" href="#section_4">Schedule</a>
                             </li>
 
                             <li className="nav-item">
                                 <a className="nav-link click-scroll" href="#section_5">Pricing</a>
-                            </li>
+                            </li> */}
 
                             <li className="nav-item">
-                                <a className="nav-link click-scroll" href="#section_6">Contact</a>
+                                {/* <a className="nav-link click-scroll" href="#section_6">Contact</a> */}
+                                <NavLink className="nav-link click-scroll" to="/contact" end>Contact</NavLink>
                             </li>
                         </ul>
 
