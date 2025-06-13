@@ -32,7 +32,7 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link click-scroll" href="#section_3">Artists</a>
+                                <NavLink className="nav-link click-scroll" to="/artist" end>Artists</NavLink>
                             </li>
 
                             <li className="nav-item">
